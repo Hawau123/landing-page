@@ -1,0 +1,291 @@
+  header {
+      display: flex;
+      flex-direction: column;
+
+      font-family: sans-serif;
+
+      margin-top: 20px;
+  }
+
+  .img{
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+      box-shadow: none;
+  }
+
+  nav a {
+      margin: 0 150px;
+      text-decoration: none;
+  }
+
+  body {
+
+      background-size: cover;
+      /* Scales the image to fill the whole screen */
+      background-position: center;
+      /* Keeps the center of the image visible */
+      background-repeat: no-repeat;
+      /* Stops the image from repeating */
+      background-attachment: fixed;
+      /* The image stays still while you scroll */
+
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: white;
+  }
+
+  button {
+      font-family: sans-serif;
+      font-size: large;
+      background-color: #111;
+      color: white;
+      padding: 4px;
+      border-radius: 8px;
+
+  }
+
+  div {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .hero-bg-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      height: 600px;
+      max-height: 150vh;
+      object-fit: contain;
+      margin: 0%;
+  }
+
+
+
+  .container {
+      background: transparent;
+      box-shadow: none;
+      width: 50%;
+      margin-top: 50px;
+
+
+  }
+
+  .button {
+      display: flex;
+      gap: 10px;
+      /* Space between the buttons */
+      margin-top: 20px;
+      box-shadow: none;
+  }
+
+  .primary {
+      margin-right: 15px;
+      /* Adds space only to the right of this button */
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+  }
+
+  .secondary {
+      background-color: transparent;
+      color: #111;
+      border: 2px solid #111;
+      padding: 10px 25px;
+  }
+
+  section {
+      margin-top: 50px;
+      position: relative;
+      /* This is the "anchor" for your absolute image */
+      display: flex;
+      align-items: flex-start;
+      /* Keeps them aligned at the top */
+      min-height: 400px;
+      width: 100%;
+  }
+
+
+  .content2 {
+      width: 50%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+
+  }
+
+  .image {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      width: 50%;
+  }
+
+  .small-images-container {
+      display: flex;
+      gap: 0px;
+      /* Space between the two small pictures */
+      margin-top: 20px;
+      margin-left: 0px;
+      background: transparent;
+      box-shadow: none;
+      padding: 0px;
+
+      /* Space between paragraph and images */
+  }
+
+  .small-images-container img {
+      width: 48%;
+      /* Fits two images side-by-side with a gap */
+      height: auto;
+      border-radius: 4px;
+  }
+
+  .content3 img.image {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: 50%;
+
+  }
+
+  .content3 {
+      width: 50%;
+      height: 100%;
+      margin-left: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      margin-top: 300px;
+      position: static;
+  }
+
+  .p3 {
+      width: 450px;
+  }
+
+  .content4 img.image {
+      position: absolute;
+      left: 0%;
+      z-index: -1;
+      width: 50%;
+
+  }
+
+  .content4 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      margin-top: 300px;
+      margin-left: 50%;
+      position: static;
+  }
+
+  .p4 {
+      width: 450px;
+  }
+
+  .content5 img.image {
+      position: absolute;
+      left: 0%;
+      z-index: -1;
+      width: 50%;
+
+  }
+
+  .content5 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      margin-top: 300px;
+      margin-left: 50%;
+      position: static;
+  }
+
+  .p5 {
+      width: 450px;
+  }
+
+  /* Add the button styles */
+  .purchase-button {
+      display: inline-block;
+      background-color: #111b47;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 20px;
+
+      border-radius: 2px;
+      text-align: center;
+      align-self: flex-start;
+      /* Aligns the button to the left within its container */
+      ;
+  }
+
+  .pricing-desc {
+      max-width: 600px;
+      color: #6f7cb2;
+      margin-bottom: 30px;
+  }
+
+  .price-container {
+      color: #222f65;
+      font-size: 50px;
+      font-weight: bold;
+  }
+
+  .kit-name {
+      color: #37447e;
+      margin-bottom: 40px;
+  }
+
+
+  /* This is the wrapper for the entire pricing section */
+  .pricing-wrapper {
+      display: flex;
+      flex-direction: column;
+      /* This forces everything to stack vertically */
+      align-items: center;
+      /* This centers everything horizontally */
+      text-align: center;
+      gap: 20px;
+      /* Adds consistent space between all items */
+      padding: 50px;
+  }
+
+  /* Ensure the elements inside don't have weird positioning */
+  .pricing-wrapper h2,
+  .pricing-wrapper p,
+  .pricing-wrapper .price-box {
+      margin: 0;
+      position: static;
+      /* Important: ensures they don't break out of the flex flow */
+  }
