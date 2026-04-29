@@ -247,45 +247,201 @@
       text-align: center;
       align-self: flex-start;
       /* Aligns the button to the left within its container */
-      ;
+      box-shadow: none;
   }
 
-  .pricing-desc {
-      max-width: 600px;
-      color: #6f7cb2;
-      margin-bottom: 30px;
-  }
+    
 
-  .price-container {
-      color: #222f65;
-      font-size: 50px;
-      font-weight: bold;
-  }
+        body {
+            font-family: 'sans-serif';
+            background-color: #F8F9FF;
+            color: #111B47;
+        }
 
-  .kit-name {
-      color: #37447e;
-      margin-bottom: 40px;
-  }
+        /* --- Pricing Section --- */
+        .pricing-section {
+            text-align: center;
+            padding: 160px 20px 100px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom, #F8F9FF 90%, #E7ECFF 100%);
+            color: #6F7CB2;
+        }
 
+        .pricing-title {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #091133;
+        }
 
-  /* This is the wrapper for the entire pricing section */
-  .pricing-wrapper {
-      display: flex;
-      flex-direction: column;
-      /* This forces everything to stack vertically */
-      align-items: center;
-      /* This centers everything horizontally */
-      text-align: center;
-      gap: 20px;
-      /* Adds consistent space between all items */
-      padding: 50px;
-  }
+        .pricing-desc {
+            font-size: 16px;
+            color: #6F7CB2;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 40px;
+            box-shadow: none;
+        }
 
-  /* Ensure the elements inside don't have weird positioning */
-  .pricing-wrapper h2,
-  .pricing-wrapper p,
-  .pricing-wrapper .price-box {
-      margin: 0;
-      position: static;
-      /* Important: ensures they don't break out of the flex flow */
-  }
+        .price-amount {
+            font-size: 50px;
+            font-weight: 700;
+            background-color: #F8F9FF;
+            color: hsl(254, 93%, 18%) ;
+            margin-bottom: 8px;
+            box-shadow: none;
+            
+        }
+
+        .price-subtitle {
+            font-size: 16px;
+            color: #37447E;
+            margin-bottom: 60px;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .price-subtext {
+            font-size: 14px;
+            color: #5D6970;
+            margin-bottom: 16px;
+            box-shadow: none;
+        }
+
+        .pricing-btn {
+            background-color: #111B47;
+            color: #FFFFFF;
+            border: none;
+            box-shadow: none;
+            padding: 14px 60px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* --- Footer Section --- */
+        .site-footer {
+            background-color: #E7ECFF; 
+            padding: 60px 0 40px 0;
+            box-shadow: none;
+        }
+
+        .footer-container {
+            max-width: 1100px; /* Constraining content to match the design's center column */
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        /* Top Row of Footer */
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .copyright-text {
+            color: #93A5CE;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .footer-logo {
+            color: #37447E;
+            font-size: 26px;
+            font-weight: 900;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .purchase-btn-small {
+            background-color: #111B47;
+            color: #FFFFFF;
+            border: none;
+            padding: 8px 24px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 2px;
+            cursor: pointer;
+            box-shadow: none;
+        }
+
+        /* Divider Line */
+        .footer-divider {
+            border: none;
+            height: 1px;
+            background-color: #CDD1D4; 
+            margin-bottom: 20px;
+            box-shadow: none;
+        }
+
+        /* Bottom Row of Footer */
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        /* Navigation Links (Left aligned in bottom row) */
+        .footer-nav {
+            list-style: none;
+            display: flex;
+            gap: 60px;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #929ECC;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            color: #111B47;
+        }
+
+        /* Social Icons (Right aligned in bottom row) */
+        .social-icons {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .social-icons svg {
+            width: 18px;
+            height: 18px;
+            fill: #B0B8DB;
+            transition: fill 0.3s ease;
+        }
+
+        .social-icons a:hover svg {
+            fill: #111B47;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-top, .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                box-shadow: none;
+            }
+            .footer-nav {
+                justify-content: center;
+                gap: 30px;
+            }
+        }
